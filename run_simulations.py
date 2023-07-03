@@ -614,12 +614,12 @@ def figure9():
 
 
 if __name__ == '__main__':
-    # figure1()
-    # figure23(meth='Euler')
-    # figure23(meth='rk')
-    # figure4()
-    # figure5()
+    figure1()
+    figure23(meth='Euler')
+    figure23(meth='rk')
+    figure4()
+    figure5()
     figure6()
-    # figure9()
-    # figureS1()
+    figure9()
+    figureS1()
 
