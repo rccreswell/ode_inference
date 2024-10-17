@@ -14,7 +14,7 @@ class FDDenseOutput(scipy.integrate._ivp.base.ConstantDenseOutput):
 
 
 class ForwardEuler(scipy.integrate.OdeSolver):
-    """Explicit Forward Euler solver.
+    """Explicit Forward Euler ODE solver.
 
     Uses a fixed, uniform step size.
     """
@@ -51,7 +51,6 @@ class ForwardEuler(scipy.integrate.OdeSolver):
 
         if np.any(np.isinf(self.y)):
             return False, 'infinite y'
-
         return True, None
 
     def _dense_output_impl(self):
